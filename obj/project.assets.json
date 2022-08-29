@@ -1943,9 +1943,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\cursos\\c#\\entity framework\\proyectef\\projectoef.csproj",
-      "projectName": "projectoef",
-      "projectPath": "D:\\cursos\\c#\\entity framework\\proyectef\\projectoef.csproj",
+      "projectUniqueName": "D:\\cursos\\c#\\entity framework\\proyectef\\proyectoef.csproj",
+      "projectName": "proyectoef",
+      "projectPath": "D:\\cursos\\c#\\entity framework\\proyectef\\proyectoef.csproj",
       "packagesPath": "C:\\Users\\Arnol\\.nuget\\packages\\",
       "outputPath": "D:\\cursos\\c#\\entity framework\\proyectef\\obj\\",
       "projectStyle": "PackageReference",

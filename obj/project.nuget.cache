@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eXNFR/mx7F1OBRbGPExCXS3sLYR/ebIa3YkQdZ2DeQR+5hVB0C6emZCjD4ONOfOOuPVbCeYvcr9ohvRPjEIwxQ==",
+  "dgSpecHash": "kTp09I2t+xpE1SRsJ8DNsSBKr3toUGaUz7wBDlsOeufEjJ60gk5V/VuM8ZElfKeexsnu8MpbLtbKQcBe4NcLzA==",
   "success": true,
-  "projectFilePath": "D:\\cursos\\c#\\entity framework\\proyectef\\projectoef.csproj",
+  "projectFilePath": "D:\\cursos\\c#\\entity framework\\proyectef\\proyectoef.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Arnol\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Arnol\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

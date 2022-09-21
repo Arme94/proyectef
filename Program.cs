@@ -5,7 +5,8 @@ using projectoef;
 var builder = WebApplication.CreateBuilder(args);
 
 //builder.Services.AddDbContext<TareasContext>(p => p.UseInMemoryDatabase("TareasDB"));
-builder.Services.AddSqlServer<TareasContext>("Data Source=PREDATOR\\SQLEXPRESS;Initial Catalog=TareasDb;user id=sa;password=sa");
+//builder.Services.AddSqlServer<TareasContext>("Data Source=PREDATOR\\SQLEXPRESS;Initial Catalog=TareasDb;user id=sa;password=sa");
+builder.Services.AddSqlServer<TareasContext>(builder.Configuration.GetConnectionString("cnTareas"));
 
 var app = builder.Build();
 

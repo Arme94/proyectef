@@ -29,7 +29,6 @@ namespace proyectoef.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Descripcion")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
@@ -37,9 +36,26 @@ namespace proyectoef.Migrations
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
 
+                    b.Property<int>("Peso")
+                        .HasColumnType("int");
+
                     b.HasKey("CategoriaId");
 
                     b.ToTable("Categoria", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            CategoriaId = new Guid("c617c17e-fe06-4009-bc12-6c10cd654239"),
+                            Nombre = "Actividades pendientes",
+                            Peso = 20
+                        },
+                        new
+                        {
+                            CategoriaId = new Guid("c617c17e-fe06-4009-bc12-6c10cd654202"),
+                            Nombre = "Actividades personales",
+                            Peso = 50
+                        });
                 });
 
             modelBuilder.Entity("projectoef.Models.Tarea", b =>
@@ -52,7 +68,6 @@ namespace proyectoef.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Descripcion")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("FechaCreacion")
@@ -71,6 +86,24 @@ namespace proyectoef.Migrations
                     b.HasIndex("CategoriaId");
 
                     b.ToTable("Tarea", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            TareaId = new Guid("c617c17e-fe06-4009-bc12-6c10cd654240"),
+                            CategoriaId = new Guid("c617c17e-fe06-4009-bc12-6c10cd654239"),
+                            FechaCreacion = new DateTime(2022, 10, 3, 22, 15, 42, 461, DateTimeKind.Local).AddTicks(8943),
+                            PrioridadTarea = 1,
+                            Titulo = "Pago de servicios publicos"
+                        },
+                        new
+                        {
+                            TareaId = new Guid("c617c17e-fe06-4009-bc12-6c10cd654241"),
+                            CategoriaId = new Guid("c617c17e-fe06-4009-bc12-6c10cd654202"),
+                            FechaCreacion = new DateTime(2022, 10, 3, 22, 15, 42, 461, DateTimeKind.Local).AddTicks(8969),
+                            PrioridadTarea = 0,
+                            Titulo = "terminar de ver pelicula en netflix"
+                        });
                 });
 
             modelBuilder.Entity("projectoef.Models.Tarea", b =>
